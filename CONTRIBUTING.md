@@ -1,6 +1,6 @@
 # Repository Contributions, Participation, and Public Access
 
-#Who may Contribute?# Contributors to [this repository](https://github.com/oasis-tcs/cacao/) are expected to 
+*Who may Contribute?* Contributors to [this repository](https://github.com/oasis-tcs/cacao/) are expected to 
 be [Members](https://www.oasis-open.org/policies-guidelines/oasis-defined-terms-2017-05-26#dMember) of the 
 [OASIS Collaborative Automated Course of Action Operations (CACAO) for Cyber Security](https://www.oasis-open.org/committees/cacao/), 
 for any
@@ -16,11 +16,11 @@ All such content created in GitHub Issues and/or posted to the
 TC's [archived comment list](https://lists.oasis-open.org/archives/cacao-comment/) is governed by the terms of the 
 [OASIS Feedback License](https://www.oasis-open.org/policies-guidelines/ipr#appendixa).
 
-#Use of Contributions#.  As with all OASIS Technical Committee assets, content placed into this GitHub repository is visible and 
+*Use of Contributions*.  As with all OASIS Technical Committee assets, content placed into this GitHub repository is visible and 
 publicly accessible.  Subject to applicable [licensing](https://github.com/oasis-tcs/cacao/blob/master/LICENSE.md) rules, the 
 repository content may be re-used freely, including the creation and publication of derivative works.
 
-#Cloning and forking#. May users clone and fork this repository?  Yes. Just as versioned content maintained in any OASIS 
+*Cloning and forking*. May users clone and fork this repository?  Yes. Just as versioned content maintained in any OASIS 
 TC's [SVN Subversion repository](https://tools.oasis-open.org/version-control/browse/) may be checked out to a remote SVN 
 repository and used by anyone, this GitHub repository may be forked or cloned for use by any party.
 
