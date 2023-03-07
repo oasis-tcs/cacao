@@ -10,7 +10,7 @@ This repository supports the work of the OASIS Collaborative Automated Course of
 
 # Contributions
 
-As stated in this repository's [CONTRIBUTING file](https://github.com/oasis-tcs/<tc-repo-name>/blob/master/CONTRIBUTING.md), contributors to this repository are expected to be Members of the OASIS SARIF TC, for any substantive change requests. Anyone wishing to contribute to this GitHub project and [participate](https://www.oasis-open.org/join/participation-instructions) in the TC's technical activity is invited to join as an OASIS TC Member.  Public feedback is also accepted, subject to the terms of the [OASIS Feedback License](https://www.oasis-open.org/policies-guidelines/ipr#appendixa).
+As stated in this repository's [CONTRIBUTING file](https://github.com/oasis-tcs/cacao/blob/master/CONTRIBUTING.md), contributors to this repository are expected to be Members of the OASIS CACAO TC, for any substantive change requests. Anyone wishing to contribute to this GitHub project and [participate](https://www.oasis-open.org/join/participation-instructions) in the TC's technical activity is invited to join as an OASIS TC Member.  Public feedback is also accepted, subject to the terms of the [OASIS Feedback License](https://www.oasis-open.org/policies-guidelines/ipr#appendixa).
 
 # Licensing
 
