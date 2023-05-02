@@ -19,7 +19,7 @@
       "name": "Block MAC address",
       "description": "This command blocks a MAC address on a switch.",
       "commands": [{
-        "type": "http-api",
+        "type": "ssh",
         "command": "Switch(conf)#mac address-table static 3467.0933.341c vlan X drop"
       }],
       "agent": "individual--75baba7d-a198-4c5c-805c-af616b4f7a31",
