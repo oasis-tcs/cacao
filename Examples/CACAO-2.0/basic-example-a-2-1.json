@@ -31,14 +31,14 @@
       "description": "End of example playbook."
     }
   },
-  "agents": {
+  "agent_definitions": {
     "individual--75baba7d-a198-4c5c-805c-af616b4f7a31": {
       "type": "individual",
       "name": "Network Admin",
       "description": "The admin who responds to an alert by configuring a switch."
     }
   },
-  "targets": {
+  "target_definitions": {
     "security-category--3c1daf98-7e22-4e0c-bb8c-6bd78159ca5d": {
       "type": "security-category",
       "name": "Switch"
