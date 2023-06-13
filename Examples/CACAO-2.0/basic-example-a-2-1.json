@@ -24,7 +24,7 @@
       }],
       "agent": "individual--75baba7d-a198-4c5c-805c-af616b4f7a31",
       "targets": ["security-category--3c1daf98-7e22-4e0c-bb8c-6bd78159ca5d"],
-      "on-completion": "end--116cdac5-63f1-4d8f-b3a8-e5667936e9b6"
+      "on_completion": "end--116cdac5-63f1-4d8f-b3a8-e5667936e9b6"
     },
     "end--116cdac5-63f1-4d8f-b3a8-e5667936e9b6": {
       "type": "end",
