@@ -1,0 +1,12 @@
+{
+  "data_marking_definitions": {
+    "marking-tlp--94868c89-83c2-464b-929b-a1a8aa3c8487": {
+      "type": "marking-tlp",
+      "id": "marking-tlp--94868c89-83c2-464b-929b-a1a8aa3c8487",
+      "created_by": "identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
+      "created": "2022-10-01T00:00:00.000Z",
+      "modified": "2022-10-01T00:00:00.000Z",
+      "tlpv2_level": "TLP:CLEAR"
+    }
+  }
+}
