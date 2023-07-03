@@ -40,7 +40,7 @@ identity--5abe695c-7bd5-4c31-8824-2528696cdbf1
   "description": "A global community of cyber security experts creating standards enabling increased automation; collaboration and effectiveness of the global response to cyber threats. ",
   "roles": [ "Technical Committee" ],
   "identity_class": "organization",
-  "sectors": [ "non-profit", "technology" ],
+  "sectors": [ "non-profit" ],
   "contact_information": "cacao-comment@lists.oasis-open.org"
 }
 ```

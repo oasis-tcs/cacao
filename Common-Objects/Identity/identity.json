@@ -23,7 +23,7 @@
     "description": "A global community of cyber security experts creating standards enabling increased automation; collaboration and effectiveness of the global response to cyber threats. ",
     "roles": [ "Technical Committee" ],
     "identity_class": "organization",
-    "sectors": [ "non-profit", "technology" ],
+    "sectors": [ "non-profit" ],
     "contact_information": "cacao-comment@lists.oasis-open.org"
   }
 ]
