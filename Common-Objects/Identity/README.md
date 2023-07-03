@@ -37,7 +37,7 @@ identity--5abe695c-7bd5-4c31-8824-2528696cdbf1
   "created": "2023-06-20T10:00:00.000Z",
   "modified": "2023-06-20T10:00:00.000Z",
   "name": "OASIS Collaborative Automated Course of Action Operations (CACAO) for Cyber Security TC",
-  "description": "A global community of cyber security experts creating standards enabling increased automation; collaboration and effectiveness of the global response to cyber threats. ",
+  "description": "A global community of cyber security experts creating standards enabling increased automation, collaboration, and effectiveness of the global response to cyber threats.",
   "roles": [ "Technical Committee" ],
   "identity_class": "organization",
   "sectors": [ "non-profit" ],
