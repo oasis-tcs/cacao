@@ -81,11 +81,11 @@
       "name": "End Playbook Example 1"
     }
   },
-  "playbook_extensions": { ... },
-  "authentication_info_definitions": { ... },
-  "agent_definitions": { ... },
-  "target_definitions": { ... },
-  "extension_definitions": { ... },
+  "playbook_extensions": {},
+  "authentication_info_definitions": {},
+  "agent_definitions": {},
+  "target_definitions": {},
+  "extension_definitions": {},
   "data_marking_definitions": {
     "marking-statement--6424867b-0440-4885-bd0b-604d51786d06": {
       "type": "marking-statement",
@@ -102,5 +102,5 @@
       "tlpv2_level": "TLP:GREEN"
     }
   },
-  "signatures": [ ... ]
+  "signatures": []
 }
