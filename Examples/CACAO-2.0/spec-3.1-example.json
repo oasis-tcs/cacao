@@ -1,0 +1,106 @@
+{
+  "type": "playbook",
+  "spec_version": "cacao-2.0",
+  "id": "playbook--61a6c41e-6efc-4516-a242-dfbc5c89d562",
+  "name": "Find Malware FuzzyPanda",
+  "description": "This playbook will look for FuzzyPanda on the network and in a SIEM",
+  "playbook_types": [
+    "investigation"
+  ],
+  "playbook_activities": [
+    "analyze-collected-data",
+    "identify-indicators"
+  ],
+  "playbook_processing_summary": {
+    "data_markings": true
+  },
+  "created_by": "identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
+  "created": "2023-02-19T08:00:24.918Z",
+  "modified": "2023-02-19T08:00:24.918Z",
+  "valid_from": "2023-02-19T08:00:24.918Z",
+  "valid_until": "2023-12-31T23:59:59.999Z",
+  "derived_from": [
+    "playbook--00ee41a2-c2ca-41da-8ea9-681344eb3926"
+  ],
+  "priority": 3,
+  "severity": 70,
+  "impact": 5,
+  "industry_sectors": [
+    "aerospace",
+    "defense"
+  ],
+  "labels": [
+    "malware",
+    "fuzzypanda",
+    "apt"
+  ],
+  "external_references": [
+    {
+      "name": "ACME Security FuzzyPanda Report",
+      "description": "ACME security review of FuzzyPanda 2021",
+      "source": "ACME Security Company, Solutions for FuzzyPanda 2021, January 2021. Available online: hxxp://www[.]example[.]com/info/fuzzypanda2021.html",
+      "url": "hxxp://www[.]example[.]com/info/fuzzypanda2021.html",
+      "external_id": "fuzzypanda 2023.01",
+      "reference_id": "malware--2008c526-508f-4ad4-a565-b84a4949b2af"
+    }
+  ],
+  "markings": [
+    "marking-statement--6424867b-0440-4885-bd0b-604d51786d06",
+    "marking-tlp--bab4a63c-aed9-4cf5-a766-dfca5abac2bb"
+  ],
+  "playbook_variables": {
+    "__data_exfil_site__": {
+      "type": "ipv4-addr",
+      "description": "The IP address for the data exfiltration site",
+      "value": "1.2.3.4"
+    }
+  },
+  "workflow_start": "start--07bea005-4a36-4a77-bd1f-79a6e4682a13",
+  "workflow_exception": " ... ",
+  "workflow": {
+    "start--07bea005-4a36-4a77-bd1f-79a6e4682a13": {
+      "type": "start",
+      "name": "Start Playbook Example 1",
+      "on_completion": "action--7f40f9d7-de39-4027-ab97-15035beff2ff"
+    },
+    "action--7f40f9d7-de39-4027-ab97-15035beff2ff": {
+      "type": "action",
+      "name": "IP Lookup",
+      "description": "Lookup the IP address in the SIEM",
+      "on_completion": "end--6b23c237-ade8-4d00-9aa1-75999738d557",
+      "commands": [
+        {
+          "type": "manual",
+          "command": "Look up IP __data_exfil_site__:value in SIEM",
+          "playbook_activity": "identify-indicators"
+        }
+      ]
+    },
+    "end--6b23c237-ade8-4d00-9aa1-75999738d557": {
+      "type": "end",
+      "name": "End Playbook Example 1"
+    }
+  },
+  "playbook_extensions": { ... },
+  "authentication_info_definitions": { ... },
+  "agent_definitions": { ... },
+  "target_definitions": { ... },
+  "extension_definitions": { ... },
+  "data_marking_definitions": {
+    "marking-statement--6424867b-0440-4885-bd0b-604d51786d06": {
+      "type": "marking-statement",
+      "id": "marking-statement--6424867b-0440-4885-bd0b-604d51786d06",
+      "created_by": "identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
+      "created": "2023-02-19T08:00:24.918Z",
+      "statement": "Copyright 2023 ACME Security Company"
+    },
+    "marking-tlp--bab4a63c-aed9-4cf5-a766-dfca5abac2bb": {
+      "type": "marking-tlp",
+      "id": "marking-tlp--bab4a63c-aed9-4cf5-a766-dfca5abac2bb",
+      "created_by": "identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
+      "created": "2022-10-01T00:00:00.000Z",
+      "tlpv2_level": "TLP:GREEN"
+    }
+  },
+  "signatures": [ ... ]
+}
