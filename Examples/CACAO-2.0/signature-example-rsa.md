@@ -46,7 +46,7 @@ kJ8IPwIDAQAB
 
 ### Step 1: Create or parse a JSON playbook object to sign
 
-```
+```json
 {
   "type": "playbook",
   "spec_version": "cacao-2.0",
@@ -78,7 +78,7 @@ kJ8IPwIDAQAB
 
 ### Step 2: Temporarily remove any existing signature objects contained in the playbook's signatures property
 
-```
+```json
 {
   "type": "playbook",
   "spec_version": "cacao-2.0",
@@ -92,7 +92,7 @@ kJ8IPwIDAQAB
 
 ### Step 3:  Create and add signature to playbook
 
-```
+```json
 {
   "type": "playbook",
   "spec_version": "cacao-2.0",
@@ -123,7 +123,7 @@ kJ8IPwIDAQAB
 
 ### Step 4: Create a JCS [RFC8785] canonical version of the playbook from step 3
 
-```
+```json
 {"created":"2022-05-18T11:31:31.319Z","created_by":"identity--5abe695c-7bd5-4c31-8824-2528696cdbf1","id":"playbook--a0777575-5c4c-4710-9f01-15776103837f","modified":"2022-05-18T11:31:31.319Z","name":"Playbook 1","signatures":[{"algorithm":"RS256","created":"2023-01-10T17:39:31.319Z","created_by":"identity--5abe695c-7bd5-4c31-8824-2528696cdbf1","hash_algorithm":"sha-256","id":"jss--af892292-c4b4-47eb-9be6-4897ff4b9388","modified":"2023-01-10T17:39:31.319Z","public_key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAptKZyFPStvmOlb0WihOBhlHUr6wFDHC+tW7hJAudfTQ5mHZQpB8PoMz07udZA+dG8dhUIPkmXlp1TgREeYTHdhxhuf0y/GhbpZv5JPYHx3watO+HWO2qYkjRMEcrWhPMdaVkS/Xe/liaMcow4jYoWaFm8VobeYsyVD2bWWdyl4joTEETm1Z47RnnfR15kVhVudVrDzEFmM4nXV/6dmIg184RJE4httwBFxR8qZCQCwTiJmsoyJxfUR0Gs4ePKc5sB0NTkmFZc5klQSitd67RJn2ldhbqE7EpDl4XlIt+UyLJm1guCBltia8Agke7dXuhpB7hQ6LJwY4EjzthkJ8IPwIDAQAB","related_to":"playbook--a0777575-5c4c-4710-9f01-15776103837f","related_version":"2022-05-18T11:31:31.319Z","signee":"ACME Cyber Company","type":"jss","valid_from":"2023-01-10T17:39:31.319Z","valid_until":"2023-06-10T17:39:31.319Z"}],"spec_version":"cacao-2.0","type":"playbook"}
 ```
 
@@ -143,7 +143,7 @@ gXyPW--uUKvGXRh_oDC7IYlx13hGmkiQw6XX3YX_V_i4Y39OPilf0q0qf46aO3IrvG-5_fgeQ3dIunmi
 
 ### Step 7:  Add the new digital signature from step 6 to the signature value property (with existing signatures, if any)
 
-```
+```json
 {
   "type": "playbook",
   "spec_version": "cacao-2.0",
@@ -193,7 +193,7 @@ gXyPW--uUKvGXRh_oDC7IYlx13hGmkiQw6XX3YX_V_i4Y39OPilf0q0qf46aO3IrvG-5_fgeQ3dIunmi
 
 ### Step 1: Receive and parse the JSON playbook object to verify
 
-```
+```json
 {
   "type": "playbook",
   "spec_version": "cacao-2.0",
@@ -233,7 +233,7 @@ gXyPW--uUKvGXRh_oDC7IYlx13hGmkiQw6XX3YX_V_i4Y39OPilf0q0qf46aO3IrvG-5_fgeQ3dIunmi
 
 Remaining Object:
 
-```
+```json
 {
   "type": "playbook",
   "spec_version": "cacao-2.0",
@@ -272,7 +272,7 @@ Public RSA Key N:
 
 ### Step 4: Create canonical version of signature object from step 2
 
-```
+```json
 {"created":"2022-05-18T11:31:31.319Z","created_by":"identity--5abe695c-7bd5-4c31-8824-2528696cdbf1","id":"playbook--a0777575-5c4c-4710-9f01-15776103837f","modified":"2022-05-18T11:31:31.319Z","name":"Playbook 1","signatures":[{"algorithm":"RS256","created":"2023-01-10T17:39:31.319Z","created_by":"identity--5abe695c-7bd5-4c31-8824-2528696cdbf1","hash_algorithm":"sha-256","id":"jss--af892292-c4b4-47eb-9be6-4897ff4b9388","modified":"2023-01-10T17:39:31.319Z","public_key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAptKZyFPStvmOlb0WihOBhlHUr6wFDHC+tW7hJAudfTQ5mHZQpB8PoMz07udZA+dG8dhUIPkmXlp1TgREeYTHdhxhuf0y/GhbpZv5JPYHx3watO+HWO2qYkjRMEcrWhPMdaVkS/Xe/liaMcow4jYoWaFm8VobeYsyVD2bWWdyl4joTEETm1Z47RnnfR15kVhVudVrDzEFmM4nXV/6dmIg184RJE4httwBFxR8qZCQCwTiJmsoyJxfUR0Gs4ePKc5sB0NTkmFZc5klQSitd67RJn2ldhbqE7EpDl4XlIt+UyLJm1guCBltia8Agke7dXuhpB7hQ6LJwY4EjzthkJ8IPwIDAQAB","related_to":"playbook--a0777575-5c4c-4710-9f01-15776103837f","related_version":"2022-05-18T11:31:31.319Z","signee":"ACME Cyber Company","type":"jss","valid_from":"2023-01-10T17:39:31.319Z","valid_until":"2023-06-10T17:39:31.319Z"}],"spec_version":"cacao-2.0","type":"playbook"}
 ```
 

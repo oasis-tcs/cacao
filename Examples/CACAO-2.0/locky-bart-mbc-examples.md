@@ -2,8 +2,8 @@
 
 ## Playbook Metadata
 
-```
-[{
+```json
+{
     "type": "playbook",
     "spec_version": "cacao-2.0",
     "id": "playbook--fefb9f12-d308-461c-8aa7-a5d6279ab468",
@@ -28,7 +28,7 @@
 
 ## Start Step 0
 
-```
+```json
         "start--507aadb2-9f8f-4937-8643-5f50cd358906": {
             "type": "start",
             "name": "Start LockyBart ransomware attack",
@@ -38,7 +38,7 @@
 
 ## Action Step 1
 
-```
+```json
         "action--cdc2f237-8823-413b-8beb-84a612be0ae8": {
             "type": "action",
             "name": "Use a software protection technique",
@@ -62,7 +62,7 @@
 
 ## Action Step 2
 
-```
+```json
         "action--3fdb51db-2548-4beb-ab7d-f52b3ab1e5ed": {
             "type": "action",
             "name": " Install LockyBart on victim's endpoint",
@@ -86,7 +86,7 @@
 
 ## Action Step 3
 
-```
+```json
         "action--7953f6e2-5f09-4fe3-8ffd-476ec5dabe3c": {
             "type": "action",
             "name": "Wipe System Restore Points with VSSadmin",
@@ -109,7 +109,7 @@
 
 ## Action Step 4
 
-```
+```json
         "action--d31e28d1-3584-4f59-a139-6764c6509c6e": {
             "type": "action",
             "name": "Generate a seed to create a key to encrypt user’s files.",
@@ -132,7 +132,7 @@
 
 ## Action Step 5
 
-```
+```json
         "action--191bce6e-2fea-4a7e-b4a5-c0d96f129a8d": {
             "type": "action",
             "name": "Enumerate the files it wants to encrypt, skipping certain folders to speed it up",
@@ -156,7 +156,7 @@
 
 ## Action Step 6
 
-```
+```json
         "action--edd41723-869d-5a07-9971-55876c706533": {
             "type": "action",
             "name": "Generate Key using data on victim's endpoint",
@@ -182,14 +182,14 @@
                 "playbook_activity": "step-sequence"
             }],
             "agent": "software--5e1cadae-7532-45d8-89f8-fe051a1e7df8",
-            "targets": ["security-category--324ccb41-3306-4876-b017-1e07a81e16de "],
+            "targets": ["security-category--324ccb41-3306-4876-b017-1e07a81e16de"],
             "on_completion": "action--3f0dc5a7-ffd8-57e1-8b0b-2181638f5c95"
         },
 ```
 
 ## Action Step 6b
 
-```
+```json
         "action--3f0dc5a7-ffd8-57e1-8b0b-2181638f5c95": {
             "type": "action",
             "name": "Encrypt Files",
@@ -206,14 +206,14 @@
                 "playbook_activity": "step-sequence"
             }],
             "agent": "software--5e1cadae-7532-45d8-89f8-fe051a1e7df8",
-            "targets": ["security-category--191bce6e-2fea-4a7e-b4a5-c0d96f129a8d "],
+            "targets": ["security-category--191bce6e-2fea-4a7e-b4a5-c0d96f129a8d"],
             "on_completion": "action--a7fca25a-2ee2-59c0-8df6-9f6ade83e286"
         },
 ```
 
 ## Action Step 7
 
-```
+```json
         "action--a7fca25a-2ee2-59c0-8df6-9f6ade83e286": {
             "type": "action",
             "name": "Encrypt key",
@@ -236,7 +236,7 @@
 
 ## Action Step 8
 
-```
+```json
         "action--e742fc09-743d-4174-9edb-1b4bcccd03bb": {
             "type": "action",
             "name": "Create and display ransom note",
@@ -247,7 +247,7 @@
                 "playbook_activity": "step-sequence"
             }],
             "agent": "software--5e1cadae-7532-45d8-89f8-fe051a1e7df8",
-            "on_completion": " end--0176c66e-9dad-4008-8b4c-bc2d52264557"
+            "on_completion": "end--0176c66e-9dad-4008-8b4c-bc2d52264557"
         },
         "end--0176c66e-9dad-4008-8b4c-bc2d52264557": {
             "type": "end",
@@ -258,8 +258,8 @@
 
 ## Agents and Targets
 
-```
-    "agents": {
+```json
+    "agent_definitions": {
         "software--5e1cadae-7532-45d8-89f8-fe051a1e7df8": {
             "type": "software",
             "name": "LockyBart",
@@ -271,7 +271,7 @@
             "description": "The threat actor group that runs the LockyBart malicious website"
         }
     },
-    "targets": {
+    "target_definitions": {
         "software--5e1cadae-7532-45d8-89f8-fe051a1e7df8": {
             "type": "software",
             "name": "LockyBart",
@@ -290,5 +290,5 @@
             "description": "Endpoint where the ransomware attack takes place"
         }
     }
-}]
+}
 ```

@@ -42,7 +42,8 @@
   "target_definitions": {
     "security-category--3c1daf98-7e22-4e0c-bb8c-6bd78159ca5d": {
       "type": "security-category",
-      "name": "Switch"
+      "name": "Switch",
+      "category": ["switch"]
     }
   }
 }
