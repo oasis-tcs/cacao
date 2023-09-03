@@ -8,7 +8,7 @@ implementations.
 
 identity--8ce3f695-d5a4-4dc8-9e93-a65af453a31a
 
-```
+```json
 {
   "type": "identity",
   "spec_version": "2.1",
@@ -28,7 +28,7 @@ identity--8ce3f695-d5a4-4dc8-9e93-a65af453a31a
 
 identity--5abe695c-7bd5-4c31-8824-2528696cdbf1
 
-```
+```json
 {
   "type": "identity",
   "spec_version": "2.1",
