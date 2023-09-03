@@ -1,11 +1,9 @@
 {
-  "data_marking_definitions": {
-    "marking-tlp--939a9414-2ddd-4d32-a0cd-375ea402b003": {
-      "type": "marking-tlp",
-      "id": "marking-tlp--939a9414-2ddd-4d32-a0cd-375ea402b003",
-      "created_by": "identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
-      "created": "2022-10-01T00:00:00.000Z",
-      "tlpv2_level": "TLP:AMBER+STRICT"
-    }
+  "marking-tlp--939a9414-2ddd-4d32-a0cd-375ea402b003": {
+    "type": "marking-tlp",
+    "id": "marking-tlp--939a9414-2ddd-4d32-a0cd-375ea402b003",
+    "created_by": "identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
+    "created": "2022-10-01T00:00:00.000Z",
+    "tlpv2_level": "TLP:AMBER+STRICT"
   }
 }
