@@ -4,13 +4,8 @@
   "id": "playbook--61a6c41e-6efc-4516-a242-dfbc5c89d562",
   "name": "Find Malware FuzzyPanda",
   "description": "This playbook will look for FuzzyPanda on the network and in a SIEM",
-  "playbook_types": [
-    "investigation"
-  ],
-  "playbook_activities": [
-    "analyze-collected-data",
-    "identify-indicators"
-  ],
+  "playbook_types": ["investigation"],
+  "playbook_activities": ["analyze-collected-data", "identify-indicators"],
   "playbook_processing_summary": {
     "data_markings": true
   },
@@ -19,21 +14,12 @@
   "modified": "2023-02-19T08:00:24.918Z",
   "valid_from": "2023-02-19T08:00:24.918Z",
   "valid_until": "2023-12-31T23:59:59.999Z",
-  "derived_from": [
-    "playbook--00ee41a2-c2ca-41da-8ea9-681344eb3926"
-  ],
+  "derived_from": ["playbook--00ee41a2-c2ca-41da-8ea9-681344eb3926"],
   "priority": 3,
   "severity": 70,
   "impact": 5,
-  "industry_sectors": [
-    "aerospace",
-    "defense"
-  ],
-  "labels": [
-    "malware",
-    "fuzzypanda",
-    "apt"
-  ],
+  "industry_sectors": ["aerospace", "defense"],
+  "labels": ["malware", "fuzzypanda", "apt"],
   "external_references": [
     {
       "name": "ACME Security FuzzyPanda Report",
@@ -56,7 +42,6 @@
     }
   },
   "workflow_start": "start--07bea005-4a36-4a77-bd1f-79a6e4682a13",
-  "workflow_exception": " ... ",
   "workflow": {
     "start--07bea005-4a36-4a77-bd1f-79a6e4682a13": {
       "type": "start",
@@ -74,18 +59,20 @@
           "command": "Look up IP __data_exfil_site__:value in SIEM",
           "playbook_activity": "identify-indicators"
         }
-      ]
+      ],
+      "agent": "group--18d3a2e0-f534-4374-a117-abdddd3e809b"
     },
     "end--6b23c237-ade8-4d00-9aa1-75999738d557": {
       "type": "end",
       "name": "End Playbook Example 1"
     }
   },
-  "playbook_extensions": {},
-  "authentication_info_definitions": {},
-  "agent_definitions": {},
-  "target_definitions": {},
-  "extension_definitions": {},
+  "agent_definitions": {
+    "group--18d3a2e0-f534-4374-a117-abdddd3e809b": {
+      "type": "group",
+      "name": "IR team"
+    }
+  },
   "data_marking_definitions": {
     "marking-statement--6424867b-0440-4885-bd0b-604d51786d06": {
       "type": "marking-statement",
@@ -101,6 +88,5 @@
       "created": "2022-10-01T00:00:00.000Z",
       "tlpv2_level": "TLP:GREEN"
     }
-  },
-  "signatures": []
+  }
 }
