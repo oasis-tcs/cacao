@@ -1,0 +1,50 @@
+{
+  "$id": "https://raw.githubusercontent.com/oasis-tcs/cacao/master/Extensions/layout/schemas/connection.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "connection",
+  "description": "A Connection data type defines the position of an outgoing relation/path of a visualized CACAO object. It comprises a list of points (in pixels) that altogether represent a line. A CACAO object may have multiple outgoing connections, each one of them represented by a connection data type. A connection should have, at a minimum, two x and y values to represent a straight line (point to point).",
+  "type": "object",
+  "properties": {
+    "connection_type": {
+      "$ref": "#/$defs/connection-type-enum",
+      "description": "The type of connection being used. \n\nThe value of this property MUST come from the 'connection-type-enum' enumeration."
+    },
+    "x": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "description": "A list of numbers (𝕎 - whole number) numbers (𝕎 - whole number)  representing the X coordinates of the connection. The list MUST contain at least two values to represent one straight line. x1 and the last x coordinate of a path SHOULD represent the midpoint x coordinates of the two connected visualized objects. \n\nThis property is strongly connected with the y property. Both x and y lists MUST have the same number of values (elements) defined, as they together create a point of the connection on the canvas (e.g., x1 with y1, x2 with y2, etc.)."
+    },
+    "y": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "description": "A list of numbers (𝕎 - whole number) numbers (𝕎 - whole number)  representing the Y coordinates of the connection. The list MUST contain at least two values to represent one straight line. y1 and the last y coordinate of a path SHOULD represent the midpoint y coordinates of the two connected visualized objects. \n\nThis property is strongly connected with the x property. Both x and y lists MUST have the same number of values (elements) defined, as they together create a point of the connection on the canvas (e.g., x1 with y1, x2 with y2, etc.)."
+    }
+  },
+  "case": {
+    "type": "string",
+    "description": "A string that represents the case value. This property MUST match a dictionary key as defined in the dictionary of a CACAO Switch Condition Step. \n\nThis property MUST be used only with the CACAO Switch Condition Step."
+  },
+  "next_steps": {
+    "$ref": "https://raw.githubusercontent.com/cyentific-rni/cacao-json-schemas/cacao-v2.0-cs01/schemas/data-types/identifier.json",
+    "description": "An identifier that identifies the next step. \n\nThis property MUST be used only with the CACAO Parallel Step."
+  },
+  "required": ["connection_type", "x", "y"],
+  "$defs": {
+    "connection-type-enum": {
+      "type": "string",
+      "enum": [
+        "on-completion",
+        "on-success",
+        "on-failure",
+        "on-true",
+        "on-false",
+        "cases",
+        "next-steps"
+      ]
+    }
+  }
+}

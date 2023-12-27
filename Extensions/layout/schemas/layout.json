@@ -1,0 +1,22 @@
+{
+  "$id": "https://raw.githubusercontent.com/oasis-tcs/cacao/master/Extensions/layout/schemas/layout.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "layout",
+  "description": "Canvas & Coordinates are two components encapsulated in one object. The canvas component is meant to be used in the playbook metadata level (section 3.1 in the CACAO specification [CACAO-Security-Playbooks-v2.0]), whereas the Coordinates component is meant to be used with Workflow Steps and Agent and Targets.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["layout"],
+      "description": "The value of this property MUST be layout."
+    },
+    "canvas": {
+      "$ref": "./canvas.json",
+      "description": "This property defines the canvas size. \n\nThis property MUST be used only in the “playbook_extension” property at the CACAO playbook metadata level as defined in section 3.1 of the CACAO specification."
+    },
+    "coordinates": {
+      "$ref": "./coordinates.json",
+      "description": "The coordinates of the visualized object in relation to the upper-left corner of the canvas. \n\nThis property SHOULD be used in the “step_extensions” and/or “agent_target_extensions” CACAO properties."
+    }
+  }
+}

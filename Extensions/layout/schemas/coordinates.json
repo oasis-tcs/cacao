@@ -1,0 +1,29 @@
+{
+    "$id": "https://raw.githubusercontent.com/oasis-tcs/cacao/master/Extensions/layout/schemas/coordinates.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "coordinates",
+    "description": "The Coordinates data type indicates the position (in pixels) of the midpoint of a visualized CACAO object relative to the upper left (origin - O) corner of a canvas, along with its connections (paths) to other objects.",
+    "type": "object",
+    "properties": {
+      "x": {
+        "type": "integer",
+        "description": "A number (𝕎 - whole number) representing the X coordinate of the midpoint of the object visualized relative to the canvas's upper-left (origin - O) corner. This number refers to pixels."
+      },
+      "y": {
+        "type": "integer",
+        "description": "A number (𝕎 - whole number) representing the Y coordinate of the midpoint of the object visualized relative to the canvas's upper-left (origin - O) corner. This number refers to pixels."
+      },
+      "outgoing_connections": {
+        "type": "array",
+        "items": {
+            "$ref": "/connection.json"
+        },
+        "description": "The outgoing connections (paths) of the object visualized."
+      }
+    },
+    "required": [
+      "x",
+      "y"
+    ]
+  }
+  
