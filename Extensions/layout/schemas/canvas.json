@@ -1,0 +1,22 @@
+{
+    "$id": "https://raw.githubusercontent.com/oasis-tcs/cacao/master/Extensions/layout/schemas/canvas.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "canvas",
+    "description": "The Canvas data type indicates the overall size (in pixels) of the canvas that subsequent playbook elements will be displayed. This data type object MUST be populated using the playbook_extensions property as described in Section 3.1 of the CACAO specification [CACAO-Security-Playbooks-v2.0]).",
+    "type": "object",
+    "properties": {
+      "width": {
+        "type": "integer",
+        "description": "A number (𝕎 - whole number) representing the width of the canvas. This number refers to pixels."
+      },
+      "height": {
+        "type": "integer",
+        "description": "A number (𝕎 - whole number) representing the height of the canvas. This number refers to pixels."
+      }
+    },
+    "required": [
+      "width",
+      "height"
+    ]
+  }
+  

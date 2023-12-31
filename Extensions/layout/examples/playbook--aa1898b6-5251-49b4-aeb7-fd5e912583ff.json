@@ -1,0 +1,241 @@
+{
+  "type": "playbook",
+  "spec_version": "cacao-2.0",
+  "id": "playbook--aa1898b6-5251-49b4-aeb7-fd5e912583ff",
+  "name": "Example Playbook",
+  "description": "A CACAO playbook showcasing how to use the Layout extension.",
+  "created_by": "identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
+  "created": "2023-11-20T13:26:54.640Z",
+  "modified": "2023-11-20T13:26:54.640Z",
+  "revoked": false,
+  "workflow_start": "start--5820e9bf-35c0-4b36-a266-7c173a9edeb5",
+  "workflow": {
+    "start--5820e9bf-35c0-4b36-a266-7c173a9edeb5": {
+      "type": "start",
+      "on_completion": "switch-condition--72c55a11-5091-4714-8050-baa854d72eda",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "layout",
+          "coordinates": {
+            "x": 570,
+            "y": 450,
+            "outgoing_connections": [
+              {
+                "connection_type": "on-completion",
+                "x": [630, 690],
+                "y": [470, 470]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "switch-condition--72c55a11-5091-4714-8050-baa854d72eda": {
+      "type": "switch-condition",
+      "name": "switch case example",
+      "cases": {
+        "1": "action--4005472a-0b74-48c6-b04b-45bb8cf2b1ae",
+        "2": "action--63483dce-6122-4975-8c7c-795d2453243d",
+        "default": "action--9a4ef680-ba51-4c1b-9b2d-715caf06ef3a"
+      },
+      "on_completion": "action--9ae9e500-155e-4f63-a76e-a43856063f55",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "layout",
+          "coordinates": {
+            "x": 690,
+            "y": 440,
+            "outgoing_connections": [
+              {
+                "connection_type": "on-completion",
+                "x": [810, 900],
+                "y": [470, 470]
+              },
+              {
+                "connection_type": "cases",
+                "x": [750, 750, 900],
+                "y": [500, 540, 540],
+                "case": "1"
+              },
+              {
+                "connection_type": "cases",
+                "x": [750, 750, 900],
+                "y": [500, 610, 610],
+                "case": "2"
+              },
+              {
+                "connection_type": "cases",
+                "x": [750, 750, 900],
+                "y": [500, 690, 690],
+                "case": "default"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "action--4005472a-0b74-48c6-b04b-45bb8cf2b1ae": {
+      "type": "action",
+      "name": "Handle case 1",
+      "on_completion": "end--d6cf8697-703c-48b1-bef5-c64585f6fb96",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "layout",
+          "coordinates": {
+            "x": 900,
+            "y": 510,
+            "outgoing_connections": [
+              {
+                "connection_type": "on-completion",
+                "x": [1050, 1150],
+                "y": [540, 540]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "action--63483dce-6122-4975-8c7c-795d2453243d": {
+      "type": "action",
+      "name": "Handle case 2",
+      "on_completion": "end--14bd3f67-f9de-49b5-95df-6be885984fa3",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "layout",
+          "coordinates": {
+            "x": 900,
+            "y": 580,
+            "outgoing_connections": [
+              {
+                "connection_type": "on-completion",
+                "x": [1050, 1150],
+                "y": [610, 610]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "action--9a4ef680-ba51-4c1b-9b2d-715caf06ef3a": {
+      "type": "action",
+      "name": "Handle default case",
+      "on_completion": "end--379f15d3-6e12-4b6c-8a9e-bd6ea5a14f5e",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "layout",
+          "coordinates": {
+            "x": 900,
+            "y": 660,
+            "outgoing_connections": [
+              {
+                "connection_type": "on-completion",
+                "x": [1050, 1150],
+                "y": [690, 690]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "action--9ae9e500-155e-4f63-a76e-a43856063f55": {
+      "type": "action",
+      "name": "Action step after Switch condition",
+      "on_completion": "end--b09eaa5d-9d96-4315-a071-d08414cde0ca",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "layout",
+          "coordinates": {
+            "x": 900,
+            "y": 440,
+            "outgoing_connections": [
+              {
+                "connection_type": "on-completion",
+                "x": [1050, 1150],
+                "y": [470, 470]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "end--b09eaa5d-9d96-4315-a071-d08414cde0ca": {
+      "type": "end",
+      "name": "End of playbook.",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "layout",
+          "coordinates": {
+            "x": 1150,
+            "y": 450
+          }
+        }
+      }
+    },
+    "end--d6cf8697-703c-48b1-bef5-c64585f6fb96": {
+      "type": "end",
+      "name": "End of case 1 branch.",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "layout",
+          "coordinates": {
+            "x": 1150,
+            "y": 520
+          }
+        }
+      }
+    },
+    "end--14bd3f67-f9de-49b5-95df-6be885984fa3": {
+      "type": "end",
+      "name": "End of case 2 branch.",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "layout",
+          "coordinates": {
+            "x": 1150,
+            "y": 590
+          }
+        }
+      }
+    },
+    "end--379f15d3-6e12-4b6c-8a9e-bd6ea5a14f5e": {
+      "type": "end",
+      "name": "End of default branch of switch condition.",
+      "step_extensions": {
+        "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+          "type": "layout",
+          "coordinates": {
+            "x": 1150,
+            "y": 670
+          }
+        }
+      }
+    }
+  },
+  "playbook_extension": {
+    "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+      "type": "layout",
+      "canvas": {
+        "width": 1300,
+        "height": 800
+      }
+    }
+  },
+  "extension_definitions": {
+    "extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f": {
+      "type": "extension-definition",
+      "name": "CACAO Layout",
+      "description": "Extension definition for diagramming CACAO playbooks.",
+      "created_by": "identity--5abe695c-7bd5-4c31-8824-2528696cdbf1",
+      "schema": "https://raw.githubusercontent.com/oasis-tcs/cacao/master/Extensions/layout/schemas/layout.json",
+      "version": "1.0.0",
+      "external_references": [
+        {
+          "name": "CACAO Layout Specification.",
+          "description": "Specification for diagramming CACAO Playbooks graphically.",
+          "source": "[CACAO-Layout-Schema-v1.0] CACAO Layout Schema Version 1.0. Edited by Vasileios Mavroeidis and Mateusz Zych. 12 December 2023. OASIS Committee Specification Draft 01. https://docs.oasis-open.org/cacao/layout/v1.0/csd01/layout-v1.0-csd01.html. Latest version: https://docs.oasis-open.org/cacao/layout/v1.0/layout-v1.0.html.",
+          "url": "https://docs.oasis-open.org/cacao/layout/v1.0/layout-v1.0.html"
+        }
+      ]
+    }
+  }
+}
