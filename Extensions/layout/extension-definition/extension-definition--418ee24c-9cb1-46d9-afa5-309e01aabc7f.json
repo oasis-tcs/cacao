@@ -9,7 +9,7 @@
     {
       "name": "CACAO Layout Specification.",
       "description": "Specification for diagramming CACAO Playbooks graphically.",
-      "source": "[CACAO-Layout-Schema-v1.0] CACAO Layout Schema Version 1.0. Edited by Vasileios Mavroeidis and Mateusz Zych. 12 December 2023. OASIS Committee Specification Draft 01. https://docs.oasis-open.org/cacao/layout/v1.0/csd01/layout-v1.0-csd01.html. Latest version: https://docs.oasis-open.org/cacao/layout/v1.0/layout-v1.0.html.",
+      "source": "[CACAO-Layout-Extension-v1.0] CACAO Layout Extension Version 1.0. Edited by Vasileios Mavroeidis and Mateusz Zych. 16 January 2024. OASIS Committee Specification Draft 01. https://docs.oasis-open.org/cacao/layout-extension/v1.0/csd01/layout-extension-v1.0-csd01.html. Latest version: https://docs.oasis-open.org/cacao/layout-extension/v1.0/layout-extension-v1.0.html.",
       "url": "https://docs.oasis-open.org/cacao/layout/v1.0/layout-v1.0.html"
     }
   ]

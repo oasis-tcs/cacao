@@ -1,6 +1,6 @@
 # CACAO Layout Specification Version 1.0
 
-The [CACAO Layout specification](https://docs.oasis-open.org/cacao/layout/v1.0/csd01/layout-v1.0-csd01.html) defines the CACAO Layout Extension for the purpose of visually representing CACAO playbooks consistently across implementations.
+The [CACAO Layout specification](https://docs.oasis-open.org/cacao/layout-extension/v1.0/csd01/layout-extension-v1.0-csd01.html) defines the CACAO Layout Extension for the purpose of visually representing CACAO playbooks consistently across implementations.
 
 The specification defines one Extension Definition (as defined in section 5 of the specification) for CACAO Playbooks and has the following identifier: `extension-definition--418ee24c-9cb1-46d9-afa5-309e01aabc7f`  
 
@@ -31,8 +31,8 @@ The `extension_definitions` property at the playbook (metadata) level, holds all
     {
       "name": "CACAO Layout Specification.",
       "description": "Specification for diagramming CACAO Playbooks graphically.",
-      "source": "[CACAO-Layout-Schema-v1.0] CACAO Layout Schema Version 1.0. Edited by Vasileios Mavroeidis and Mateusz Zych. 12 December 2023. OASIS Committee Specification Draft 01. https://docs.oasis-open.org/cacao/layout/v1.0/csd01/layout-v1.0-csd01.html. Latest version: https://docs.oasis-open.org/cacao/layout/v1.0/layout-v1.0.html.",
-      "url": "https://docs.oasis-open.org/cacao/layout/v1.0/layout-v1.0.html"
+      "source": "[CACAO-Layout-Extension-v1.0] CACAO Layout Extension Version 1.0. Edited by Vasileios Mavroeidis and Mateusz Zych. 16 January 2024. OASIS Committee Specification Draft 01. https://docs.oasis-open.org/cacao/layout-extension/v1.0/csd01/layout-extension-v1.0-csd01.html. Latest version: https://docs.oasis-open.org/cacao/layout-extension/v1.0/layout-extension-v1.0.html.",
+      "url": "https://docs.oasis-open.org/cacao/layout-extension/v1.0/layout-extension-v1.0.html"
     }
   ]
 }
@@ -160,7 +160,7 @@ End step utilizing the Coordinates property of the CACAO Layout extension withou
 
 ## Resources
 
-- [CACAO-Coordinates-Schema-v1.0]
-CACAO Layout Extension Version 1.0. Edited by Vasileios Mavroeidis and Mateusz Zych. 22 December 2023. OASIS Committee Specification Draft 01. [https://docs.oasis-open.org/cacao/layout/v1.0/csd01/layout-v1.0-csd01.html]. Latest version: [https://docs.oasis-open.org/cacao/layout/v1.0/layout-v1.0.html].
+- [CACAO-Layout-Extension-v1.0]
+CACAO Layout Extension Version 1.0. Edited by Vasileios Mavroeidis and Mateusz Zych. 16 January 2024. OASIS Committee Specification Draft 01. [https://docs.oasis-open.org/cacao/layout-extension/v1.0/csd01/layout-extension-v1.0-csd01.html]. Latest version: [https://docs.oasis-open.org/cacao/layout-extension/v1.0/layout-extension-v1.0.html].
 - [CACAO-Security-Playbooks-v2.0]
 CACAO Security Playbooks Version 2.0. Edited by Bret Jordan and Allan Thomson. 27 November 2023. OASIS Committee Specification 01. [https://docs.oasis-open.org/cacao/securityplaybooks/v2.0/cs01/security-playbooks-v2.0-cs01.html]. Latest version: [https://docs.oasisopen.org/cacao/security-playbooks/v2.0/security-playbooks-v2.0.html].
